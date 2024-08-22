@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;
+700&family=Handlee&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900
+&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Salsa&displa
+y=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+        <img class="header__logo" src="./assets/A de Alura.png" alt="logo Alura">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="left"> 
+                <textarea id="ingresoTexto" class="ingreso__texto" 
+                placeholder="Ingrese el texto aquí"></textarea>
+                <div class="left__footer" >
+                    <img src="./assets/Exclamation.png" alt="circulo con signo de exlamación">
+                    <span class="left__info">Solo letras minúsculas y sin acentos.</span>
+                    <div class="left__buttons">
+                        <button
+                        id="botonEncriptar"
+                        class="boton__encriptar">Encriptar</button>
+                        <button
+                        id="botonDesencriptar"
+                        class="boton__desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div id="right" class="right">
+                <img id="muneco" class="muneco" src="./assets/Muñeco.png" alt="">
+                <textarea id="mensajeFinal" class="mensaje__final" 
+                placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="rightInfo" class="right__info">Ingresa el texto que desees encriptar 
+                o desencriptar.</p>
+                <button id="botonCopiar" class="boton__copiar
+                oculto" >Copiar</button>
+            </div>
+
+        </div>
+
+    </main>
+<!--     <footer>
+
+    </footer> -->
+    <script src="script.js"></script>
+</body>
+</html>
